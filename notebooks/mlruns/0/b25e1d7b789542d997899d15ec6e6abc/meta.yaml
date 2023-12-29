@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/adrianinfantes/Desktop/AIR/COLLEGE%20AND%20STUDIES/Data_Scientist_formation/Kaggle/WrittingDetection/notebooks/mlruns/0/b25e1d7b789542d997899d15ec6e6abc/artifacts
+end_time: 1703797182231
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b25e1d7b789542d997899d15ec6e6abc
+run_name: ./model_output
+run_uuid: b25e1d7b789542d997899d15ec6e6abc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703797073747
+status: 3
+tags: []
+user_id: adrianinfantes
