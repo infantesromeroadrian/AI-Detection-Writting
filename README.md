@@ -69,7 +69,7 @@ The tools and technologies used in this project include:
 
 ## ✒️ Authors
 
-- **Your Name** - *Initial Development* - [YourProfile](Link)
+- [https://www.linkedin.com/in/adrianinfantes]
 
 ## 📄 License
 
