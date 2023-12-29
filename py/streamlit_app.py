@@ -19,27 +19,27 @@ def classify_text(text):
     return predicted_class
 
 # Interfaz de Streamlit
-st.title('Detector de Texto Generado por IA')
+st.title('Writting AI Detector App')
 
 # Opción para subir archivo o ingresar texto
-text_input_method = st.radio("¿Cómo deseas ingresar el texto?", ('Escribir texto', 'Subir archivo'))
+text_input_method = st.radio("How would you like to enter a text?", ('Write text', 'Upload file'))
 
 text = ""
-if text_input_method == 'Escribir texto':
-    text = st.text_area("Ingresa el texto aquí:", height=200)
-elif text_input_method == 'Subir archivo':
-    uploaded_file = st.file_uploader("Elige un archivo de texto", type=['txt'])
+if text_input_method == 'Write text':
+    text = st.text_area("Enter Text","Type Here ..")
+elif text_input_method == 'Upload file':
+    uploaded_file = st.file_uploader("Upload Files",type=['txt'])
     if uploaded_file is not None:
         text = uploaded_file.read().decode("utf-8")
 
 # Botón de clasificación
-if st.button('Clasificar'):
+if st.button('Classify'):
     if text:
         result = classify_text(text)
-        st.write("Resultado en bruto de la clasificación:", result)
-        st.write(f"El texto es {'generado por IA' if result == 1 else 'escrito por un humano'}")
+        st.write("The text is: ")
+        st.write(f"The text is {'AI Generated' if result == 1 else 'Human Writting'}")
     else:
-        st.write("Por favor, ingresa un texto o sube un archivo.")
+        st.write("Please enter a text to classify")
 
 # Ejecutar: streamlit run app.py
 
