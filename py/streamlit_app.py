@@ -42,5 +42,3 @@ if st.button('Classify'):
         st.write("Please enter a text to classify")
 
 # Ejecutar: streamlit run app.py
-
-
